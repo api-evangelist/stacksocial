@@ -1,7 +1,23 @@
 aid: stacksocial
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stacksocial.png
 name: StackSocial
-description: StackSocial is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: StackSocial is a consumer e-commerce and daily-deals marketplace operated by StackCommerce,
+  selling software, online courses, gadgets, and digital goods at discounted prices. It was surfaced as
+  a portfolio company of 500 Global and added to the API Evangelist network for enrichment. The public
+  surface is a bot-protected single-page storefront; enrichment probes found no publicly documented API,
+  OpenAPI specification, SDK packages, MCP server, well-known metadata, or llms.txt on the stacksocial.com
+  host as of this pass.
 url: https://raw.githubusercontent.com/api-evangelist/stacksocial/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +27,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- E-Commerce
+- Marketplace
+- Deals
+- Digital Goods
+- Retail
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis: []
 common:
+- type: DomainSecurity
+  url: security/stacksocial-domain-security.yml
 - type: Website
   url: https://stacksocial.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
